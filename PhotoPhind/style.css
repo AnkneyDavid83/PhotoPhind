@@ -50,7 +50,39 @@ header h2 {
   justify-content: space-between;
   align-items: center;
   color: gray;
+  padding: 0.5em 0em;
 }
 .gallery-info a {
   color: gray;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 2em 0em;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  padding: 1em 3em;
+  background: rgb(74, 68, 131);
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
 }
